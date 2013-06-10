@@ -754,6 +754,13 @@ article.blog
     padding: 2%
     top: -6em
 
+    &.article
+      border: 1px solid $border-color
+      border-bottom-width: 0
+
+      @media screen and (max-width: $break-large)
+        border: none
+
   .content
     img
       width: auto
