@@ -633,7 +633,8 @@ nav
 //********************************************
   * COLLECTION
   ********************************************
-nav.collection
+nav.collection,
+nav.product
   top: -6em
 
   .price
@@ -678,6 +679,10 @@ nav.collection
     display: block
     margin-bottom: 1em
 
+@media screen and (max-width: $break-small)
+  nav.product
+    top: 0
+
 
 
 
@@ -689,6 +694,9 @@ nav.collection
   ul
     padding: 2%
     top: -6em
+
+    @media screen and (max-width: $break-small)
+      top: -2em
 
     a
       background-color: white
