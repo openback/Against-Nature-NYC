@@ -1467,24 +1467,23 @@ nav.product .price {
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 480px) {
-  /* line 683, ../sass/screen.sass */
-  nav.product {
-    top: 0;
-  }
+/* line 682, ../sass/screen.sass */
+nav.product {
+  top: 0;
 }
-/* line 694, ../sass/screen.sass */
+
+/* line 692, ../sass/screen.sass */
 .blog ul {
   padding: 2%;
   top: -6em;
 }
 @media screen and (max-width: 480px) {
-  /* line 694, ../sass/screen.sass */
+  /* line 692, ../sass/screen.sass */
   .blog ul {
     top: -2em;
   }
 }
-/* line 701, ../sass/screen.sass */
+/* line 699, ../sass/screen.sass */
 .blog ul a {
   background-color: white;
   border-bottom: 1px solid #bbbbbb;
@@ -1510,94 +1509,94 @@ nav.product .price {
 .blog ul a:active {
   color: #a95400;
 }
-/* line 710, ../sass/screen.sass */
+/* line 708, ../sass/screen.sass */
 .blog ul a:last-child {
   border-bottom-width: 0;
 }
-/* line 713, ../sass/screen.sass */
+/* line 711, ../sass/screen.sass */
 .blog ul a:hover {
   -webkit-box-shadow: 0 0 4px 3px #aaaaaa;
   -moz-box-shadow: 0 0 4px 3px #aaaaaa;
   box-shadow: 0 0 4px 3px #aaaaaa;
   background-color: #efefef;
 }
-/* line 717, ../sass/screen.sass */
+/* line 715, ../sass/screen.sass */
 .blog img {
   float: left;
   margin-right: 2%;
   width: 35%;
   height: auto;
 }
-/* line 723, ../sass/screen.sass */
+/* line 721, ../sass/screen.sass */
 .blog h1,
 .blog date {
   display: inline-block;
 }
-/* line 727, ../sass/screen.sass */
+/* line 725, ../sass/screen.sass */
 .blog h1 {
   font-size: 1.2em;
   text-transform: uppercase;
 }
-/* line 731, ../sass/screen.sass */
+/* line 729, ../sass/screen.sass */
 .blog date {
   float: right;
   font-size: 0.8em;
   font-weight: normal;
 }
-/* line 736, ../sass/screen.sass */
+/* line 734, ../sass/screen.sass */
 .blog .excerpt {
   display: block;
   clear: right;
   overflow: hidden;
 }
-/* line 741, ../sass/screen.sass */
+/* line 739, ../sass/screen.sass */
 .blog nav {
   text-align: center;
 }
-/* line 744, ../sass/screen.sass */
+/* line 742, ../sass/screen.sass */
 .blog nav a {
   padding: 0 0.5em;
 }
 @media screen and (max-width: 480px) {
-  /* line 748, ../sass/screen.sass */
+  /* line 746, ../sass/screen.sass */
   .blog img {
     width: 100%;
   }
 }
 
-/* line 760, ../sass/screen.sass */
+/* line 758, ../sass/screen.sass */
 article.blog .container {
   background-color: white;
   padding: 2%;
   top: -6em;
 }
-/* line 765, ../sass/screen.sass */
+/* line 763, ../sass/screen.sass */
 article.blog .container.article {
   border: 1px solid #bbbbbb;
   border-bottom-width: 0;
 }
 @media screen and (max-width: 1000px) {
-  /* line 765, ../sass/screen.sass */
+  /* line 763, ../sass/screen.sass */
   article.blog .container.article {
     border: none;
   }
 }
-/* line 773, ../sass/screen.sass */
+/* line 771, ../sass/screen.sass */
 article.blog .content img {
   width: auto;
   max-width: 100%;
 }
-/* line 777, ../sass/screen.sass */
+/* line 775, ../sass/screen.sass */
 article.blog .credit {
   float: right;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 782, ../sass/screen.sass */
+/* line 780, ../sass/screen.sass */
 article.blog .credit .author {
   font-weight: bold;
 }
-/* line 786, ../sass/screen.sass */
+/* line 784, ../sass/screen.sass */
 article.blog nav a {
   display: inline-block;
   overflow: hidden;
@@ -1621,33 +1620,33 @@ article.blog nav a:hover {
 article.blog nav a:active {
   color: #a95400;
 }
-/* line 793, ../sass/screen.sass */
+/* line 791, ../sass/screen.sass */
 article.blog nav a:hover {
   -webkit-box-shadow: 0 0 4px 3px #aaaaaa;
   -moz-box-shadow: 0 0 4px 3px #aaaaaa;
   box-shadow: 0 0 4px 3px #aaaaaa;
   background-color: #efefef;
 }
-/* line 798, ../sass/screen.sass */
+/* line 796, ../sass/screen.sass */
 article.blog nav a:first-child figcaption {
   text-align: left;
 }
-/* line 802, ../sass/screen.sass */
+/* line 800, ../sass/screen.sass */
 article.blog nav a:last-child figcaption {
   text-align: right;
 }
-/* line 804, ../sass/screen.sass */
+/* line 802, ../sass/screen.sass */
 article.blog nav img {
   width: 100%;
 }
 @media screen and (max-width: 1000px) {
-  /* line 785, ../sass/screen.sass */
+  /* line 783, ../sass/screen.sass */
   article.blog nav {
     font-size: 0.8em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 813, ../sass/screen.sass */
+  /* line 811, ../sass/screen.sass */
   article.blog .container {
     top: 0;
   }
