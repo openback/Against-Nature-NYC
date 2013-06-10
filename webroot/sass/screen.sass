@@ -108,6 +108,132 @@ nav
     color: white
     height: 2em
 
+// Inline block "cards"
+.sections
+  text-align: center
+  text-transform: uppercase
+  margin-top: 10px
+
+  li
+    +inline-box
+    margin-bottom: 15px
+
+  a
+    +link-colors(black, $link-color, $link-active, black, $link-focus)
+
+    &:hover
+      figure
+        +single-box-shadow(#aaa, 0, 0, 4px, 3px)
+        background-color: #efefef
+        border-color: black
+        position: relative
+        z-index: 9999
+
+      img
+        +opacity(1)
+
+  figure,
+  img
+    +transition-property(all)
+    +transition-duration(350ms)
+
+  figure
+    background-color: $bg-color
+    +border-radius(2px)
+    border: 1px solid $border-color
+    overflow: hidden
+    padding: 3%
+    width: 100%
+
+  img
+    height: auto
+    width: 100%
+    +opacity(0.9)
+
+  figcaption
+    letter-spacing: 0.25em
+    margin: 0.5em 0
+
+  @media screen and (max-width: $break-large)
+    figcaption
+      margin: 0.5em 0
+
+  @media screen and (max-width: $break-small)
+    li
+      margin-bottom: 5px
+      margin-right: 0
+
+    img
+      +opacity(1)
+
+  &.max-3
+    li
+      width: 32%
+      margin-right: 2%
+
+      &:nth-child(3n)
+        margin-right: 0
+
+      @media screen and (max-width: $break-small)
+        width: 49%
+        margin-bottom: 5px
+
+        &:nth-child(3n)
+          margin-right: 2%
+
+        &:nth-child(2n)
+          margin-right: 0
+
+        figcaption
+          letter-spacing: normal
+
+  &.max-4
+    li
+      width: 23.5%
+      margin-right: 2%
+
+      &:nth-child(4n)
+        margin-right: 0
+
+      @media screen and (max-width: $break-large)
+        figcaption
+          letter-spacing: normal
+
+      @media screen and (max-width: $break-small)
+        width: 49%
+        margin-bottom: 5px
+
+        &:nth-child(3n)
+          margin-right: 2%
+
+        &:nth-child(2n)
+          margin-right: 0
+
+// Resizable columns
+.columns
+  margin-bottom: 2em
+
+  .column
+    float: left
+
+  @media screen and (max-width: $break-small)
+    border-bottom: 1px solid #333
+    margin-bottom: 1em
+    padding-bottom: 2em
+
+  &.max-2
+    .column
+      width: 48%
+
+      &:nth-child(2n-1)
+        margin-right: 4%
+
+      @media screen and (max-width: $break-small)
+        width: 100%
+
+        &:first-child
+          margin: 1em 0
+
 #page-wrap
   min-height: 100%
 
@@ -335,132 +461,6 @@ nav
     label
       margin-right: 1em
 
-// Inline block "cards"
-.sections
-  text-align: center
-  text-transform: uppercase
-  margin-top: 10px
-
-  li
-    +inline-box
-    margin-bottom: 15px
-
-  a
-    +link-colors(black, $link-color, $link-active, black, $link-focus)
-
-    &:hover
-      figure
-        +single-box-shadow(#aaa, 0, 0, 4px, 3px)
-        background-color: #efefef
-        border-color: black
-        position: relative
-        z-index: 9999
-
-      img
-        +opacity(1)
-
-  figure,
-  img
-    +transition-property(all)
-    +transition-duration(350ms)
-
-  figure
-    background-color: $bg-color
-    +border-radius(2px)
-    border: 1px solid $border-color
-    overflow: hidden
-    padding: 3%
-    width: 100%
-
-  img
-    height: auto
-    width: 100%
-    +opacity(0.9)
-
-  figcaption
-    letter-spacing: 0.25em
-    margin: 0.5em 0
-
-  @media screen and (max-width: $break-large)
-    figcaption
-      margin: 0.5em 0
-
-  @media screen and (max-width: $break-small)
-    li
-      margin-bottom: 5px
-      margin-right: 0
-
-    img
-      +opacity(1)
-
-  &.max-3
-    li
-      width: 32%
-      margin-right: 2%
-
-      &:nth-child(3n)
-        margin-right: 0
-
-      @media screen and (max-width: $break-small)
-        width: 49%
-        margin-bottom: 5px
-
-        &:nth-child(3n)
-          margin-right: 2%
-
-        &:nth-child(2n)
-          margin-right: 0
-
-        figcaption
-          letter-spacing: normal
-
-  &.max-4
-    li
-      width: 23.5%
-      margin-right: 2%
-
-      &:nth-child(4n)
-        margin-right: 0
-
-      @media screen and (max-width: $break-large)
-        figcaption
-          letter-spacing: normal
-
-      @media screen and (max-width: $break-small)
-        width: 49%
-        margin-bottom: 5px
-
-        &:nth-child(3n)
-          margin-right: 2%
-
-        &:nth-child(2n)
-          margin-right: 0
-
-// Resizable columns
-.columns
-  margin-bottom: 2em
-
-  .column
-    float: left
-
-  @media screen and (max-width: $break-small)
-    border-bottom: 1px solid #333
-    margin-bottom: 1em
-    padding-bottom: 2em
-
-  &.max-2
-    .column
-      width: 48%
-
-      &:nth-child(2n-1)
-        margin-right: 4%
-
-      @media screen and (max-width: $break-small)
-        width: 100%
-
-        &:first-child
-          margin: 1em 0
-
 
 
 
@@ -679,4 +679,122 @@ nav.collection
     margin-bottom: 1em
 
 
+
+
+
+//********************************************
+  * BLOG
+  ********************************************
+.blog
+  ul
+    padding: 2%
+    top: -6em
+
+    a
+      background-color: white
+      border-bottom: 1px solid $border-color
+      display: block
+      margin-bottom: 0.5em
+      overflow: hidden
+      padding: 1%
+      +link-colors(black, $link-color, $link-active, black, $link-focus)
+
+      &:last-child
+        border-bottom-width: 0
+
+      &:hover
+        +single-box-shadow(#aaa, 0, 0, 4px, 3px)
+        background-color: #efefef
+
+  img
+    float: left
+    margin-right: 2%
+    width: 35%
+    height: auto
+
+  h1,
+  date
+    display: inline-block
+
+  h1
+    font-size: 1.2em
+    text-transform: uppercase
+
+  date
+    float: right
+    font-size: 0.8em
+    font-weight: normal
+
+  .excerpt
+    display: block
+    clear: right
+    overflow: hidden
+
+  nav
+    text-align: center
+
+    a
+      padding: 0 0.5em
+
+  @media screen and (max-width: $break-small)
+    img
+      width: 100%
+
+
+
+
+
+
+//********************************************
+  * ARTICLE
+  ********************************************
+article.blog
+  .container
+    background-color: $bg-color
+    padding: 2%
+    top: -6em
+
+  .content
+    img
+      width: auto
+      max-width: 100%
+
+  .credit
+    float: right
+    font-size: 0.9em
+    font-style: italic
+
+    .author
+      font-weight: bold
+
+  nav
+    a
+      display: inline-block
+      overflow: hidden
+      padding: 1%
+      +link-colors(black, $link-color, $link-active, black, $link-focus)
+      width: 40%
+
+      &:hover
+        +single-box-shadow(#aaa, 0, 0, 4px, 3px)
+        background-color: #efefef
+
+      &:first-child
+        figcaption
+          text-align: left
+
+      &:last-child
+        figcaption
+          text-align: right
+    img
+      width: 100%
+
+    @media screen and (max-width: $break-large)
+      font-size: 0.8em
+
+
+
+  @media screen and (max-width: $break-small)
+    .container
+      top: 0
 
